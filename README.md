@@ -2,6 +2,25 @@
 
 # Bus Ticket Reservation System
 
+# Set up
+1. Download and install git (https://git-scm.com)
+2. Download and install java 17, (https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html).
+    - Also configure the correct JAVA_HOME environment variable.
+    - Verify the environment variable, run the  `java --version` on a command line
+3. Create a GitHub account and a personal access token (classic token) (https://github.com/settings/tokens). Use your username and personal access token to login on your windows machine for github.
+4. Navigate to the desired directory where you want the project to live. Then in the address bar in file explorer, type `cmd` and press enter.
+   Copy the following command and paste it in the command line which opened and press enter.
+    ```
+    git clone https://github.com/psungum/Bus-Ticket-Reservation-System.git
+    ```
+   This command will download the project from git.
+5. Download and install Docker (https://www.docker.com)
+6. From file explorer, double click on the file `docker-up.bat` found under the infra directory to bring up the database
+7. Run the `main` method in the class Main.java
+
+
+
+# Description
 > A bus ticket reservation system is an java application designed to provide customers with a personalized easy-to-utilize user experience for booking and purchasing tickets online. It stores customers' personal data records, scheduled routes, frequent trips, drop points, and other information.
 
 > Bus ticket reservation system is a console based application.
