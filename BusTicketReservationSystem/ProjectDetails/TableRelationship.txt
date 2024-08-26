@@ -1,5 +1,5 @@
-﻿Table Bus :
-====================
+﻿--Table Bus :
+--====================
 create table bus(
     busNo int primary key,
     bName varchar(20) not null unique,
@@ -13,8 +13,8 @@ create table bus(
     fare int not null
 );
 
-Table Customer :
-=====================
+--Table Customer :
+--=====================
 create table customer (
     cusId int primary key auto_increment,
     username varchar(20) not null unique,
@@ -25,8 +25,8 @@ create table customer (
     mobile varchar(12) not null
 );
 
-Table Booking :
-==================
+--Table Booking :
+--==================
 create table booking (
     bId int primary key auto_increment,
     cusId int not null,

@@ -15,7 +15,7 @@ public class DButil {
 			e.printStackTrace();
 		}
 		
-		String url = "jdbc:mysql://localhost:3306/busreservation";
+		String url = "jdbc:mysql://localhost:3306/busreservation?useSSL=false";
 		
 		try {
 			conn =  DriverManager.getConnection(url, "root", "root");
