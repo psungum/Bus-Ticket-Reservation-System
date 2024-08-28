@@ -166,7 +166,6 @@ public class Main {
 			System.out.println(ConsoleColors.GREEN_BACKGROUND + "Login Successfull" + ConsoleColors.RESET);
 			customerMethods(customer);
 		}
-		
 	}
 	
 	static void customerSignup() {
@@ -234,12 +233,10 @@ public class Main {
 		}
 	}
 	}
-	
 
 	public static void main(String[] args) {
 		
 		AdminOrCustomer();
 				
-	}	
-
+	}
 }
