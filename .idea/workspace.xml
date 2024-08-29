@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da63819c-a23f-4c12-a5ba-3a9bee3bc74c" name="Changes" comment="Refactor project structure">
+    <list default="true" id="da63819c-a23f-4c12-a5ba-3a9bee3bc74c" name="Changes" comment="Add validations">
       <change afterPath="$PROJECT_DIR$/infra/clean_db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bus/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bus/usecases/AddBus2usecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bus/usecases/AddBus2usecase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/usecases/BookTicketbNameusecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bus/usecases/BookTicketbNameusecase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/usecases/CancelTicketbNameusecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bus/usecases/CancelTicketbNameusecase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/usecases/CusLoginusecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bus/usecases/CusLoginusecase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bus/usecases/CusSignUp2usecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bus/usecases/CusSignUp2usecase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/usecases/UpdateStatususecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bus/usecases/UpdateStatususecase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +74,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724671068705</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add validations">
+      <option name="closed" value="true" />
+      <created>1724869004926</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724869004926</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,7 +97,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Refactor project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor project structure" />
+    <MESSAGE value="Add validations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add validations" />
   </component>
 </project>

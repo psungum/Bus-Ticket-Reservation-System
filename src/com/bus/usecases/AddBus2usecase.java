@@ -24,11 +24,11 @@ public class AddBus2usecase {
 
 			String bName = getString("Enter bus name", AddBus2usecase::validateBusName);
 
-			String routeFrom = getString("Enter Route from", input -> !input.isEmpty());
+			String routeFrom = getString("Enter Route from", input -> input.length() >= 3 && input.length() <= 20);
 
-			String routeTo = getString("Enter Route To", input -> !input.isEmpty());
+			String routeTo = getString("Enter Route To", input -> input.length() >= 3 && input.length() <= 20);
 
-			String bType = getString("Enter Bus Type - AC / NonAC", input -> input.equalsIgnoreCase("AC") || input.equalsIgnoreCase("NonAC"));
+			String bType = getString("Enter Bus Type - AC / NonAC", input -> input.equals("AC") || input.equals("NonAC"));
 
 			//String departure = getString("Enter Departure date and time in format (YYYY-MM-DD HH:MI:SS)", AddBus2usecase::validateDate );
 			String departure = getDateTime("Enter Departure date and time in format (YYYY-MM-DD HH:MI:SS)");

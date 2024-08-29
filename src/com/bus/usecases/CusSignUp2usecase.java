@@ -24,10 +24,10 @@ public class CusSignUp2usecase {
 				System.out.println(ConsoleColors.ORANGE + "Enter Username" + ConsoleColors.RESET);
 				username = sc.next();
 
-				if (username.length() >= 5 && username.matches("[a-zA-Z0-9]+")) {
+				if (username.length() >= 5 && username.length() <= 20 && username.matches("[a-zA-Z0-9]+")) {
 					isValidUsername = true;
 				} else {
-					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid username! Must be at least 5 characters long, contain only letters and numbers." + ConsoleColors.RESET);
+					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid username! Must be 5-20 characters long and contain only letters and numbers." + ConsoleColors.RESET);
 				}
 
 			} while (!isValidUsername);
@@ -39,10 +39,10 @@ public class CusSignUp2usecase {
 				System.out.println(ConsoleColors.ORANGE + "Enter Password" + ConsoleColors.RESET);
 				password = sc.next();
 
-				if (password.length() >= 8) {
+				if (password.length() >= 8 && password.length() <= 20) {
 					isValidPassword = true;
 				} else {
-					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid password! Must be at least 8 characters long." + ConsoleColors.RESET);
+					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid password! Must be 5-20 characters long." + ConsoleColors.RESET);
 				}
 
 			} while (!isValidPassword);
@@ -54,10 +54,10 @@ public class CusSignUp2usecase {
 				System.out.println(ConsoleColors.ORANGE + "Enter First Name" + ConsoleColors.RESET);
 				firstName = sc.next();
 
-				if (firstName.matches("[a-zA-Z]+") && firstName.length() >= 3) {
+				if (firstName.matches("[a-zA-Z]+") && firstName.length() >= 3 && firstName.length() <= 20) {
 					isValidFirstName = true;
 				} else {
-					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid first name! Must contain only letters." + ConsoleColors.RESET);
+					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid First Name! Must be 3-20 characters long and contain only letters." + ConsoleColors.RESET);
 				}
 
 			} while (!isValidFirstName);
@@ -69,10 +69,10 @@ public class CusSignUp2usecase {
 				System.out.println(ConsoleColors.ORANGE + "Enter Last Name" + ConsoleColors.RESET);
 				lastName = sc.next();
 
-				if (lastName.matches("[a-zA-Z]+") && firstName.length() >= 3 ) {
+				if (lastName.matches("[a-zA-Z]+") && lastName.length() >= 3 && lastName.length() <= 20 ) {
 					isValidLastName = true;
 				} else {
-					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid last name! Must contain only letters." + ConsoleColors.RESET);
+					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid last name! Must be 3-20 characters long and contain only letters." + ConsoleColors.RESET);
 				}
 
 			} while (!isValidLastName);
@@ -85,25 +85,24 @@ public class CusSignUp2usecase {
 				System.out.println(ConsoleColors.ORANGE + "Enter Address" + ConsoleColors.RESET);
 				address = sc.nextLine();
 
-				if ( address.length() >= 3) {
+				if ( address.length() >= 3 && address.length() <= 20 && address.matches("[a-zA-Z0-9]+")){
 					isValidAddress = true;
 				} else {
-					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid address! Must not be empty." + ConsoleColors.RESET);
+					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid address! Must be 3-20 characters long." + ConsoleColors.RESET);
 				}
 
 			} while (!isValidAddress);
 
-			// Mobile Validation (10 digits)
 			String mobile;
 			boolean isValidMobile = false;
 			do {
 				System.out.println(ConsoleColors.ORANGE + "Enter Mobile" + ConsoleColors.RESET);
 				mobile = sc.next();
 
-				if (mobile.matches("\\d{8}")) {
+				if (mobile.matches("5\\d{7}")) {
 					isValidMobile = true;
 				} else {
-					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid mobile number! Must be exactly 8 digits." + ConsoleColors.RESET);
+					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid mobile number! Must be exactly 8 digits and start with 5." + ConsoleColors.RESET);
 				}
 
 			} while (!isValidMobile);
@@ -114,7 +113,7 @@ public class CusSignUp2usecase {
 
 			String result = dao.cusSignUp(customer);
 
-			if (result == "Sign up Successfull") {
+			if ("Sign up Successfull".equals(result)) {
 				flag = true;
 				System.out.println(ConsoleColors.GREEN_BACKGROUND + result + ConsoleColors.RESET);
 			}
