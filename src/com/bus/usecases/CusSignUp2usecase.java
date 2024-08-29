@@ -22,13 +22,14 @@ public class CusSignUp2usecase {
 			boolean isValidUsername = false;
 			do {
 				System.out.println(ConsoleColors.ORANGE + "Enter Username" + ConsoleColors.RESET);
-				username = sc.next();
+				username = sc.next(); // Read the input from the user
 
 				if (username.length() >= 5 && username.length() <= 20 && username.matches("[a-zA-Z0-9]+")) {
 					isValidUsername = true;
 				} else {
 					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid username! Must be 5-20 characters long and contain only letters and numbers." + ConsoleColors.RESET);
 				}
+
 
 			} while (!isValidUsername);
 
@@ -42,7 +43,7 @@ public class CusSignUp2usecase {
 				if (password.length() >= 8 && password.length() <= 20) {
 					isValidPassword = true;
 				} else {
-					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid password! Must be 5-20 characters long." + ConsoleColors.RESET);
+					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid password! Must be 8-20 characters long." + ConsoleColors.RESET);
 				}
 
 			} while (!isValidPassword);
@@ -62,7 +63,6 @@ public class CusSignUp2usecase {
 
 			} while (!isValidFirstName);
 
-			// Last Name Validation (non-empty, letters only)
 			String lastName;
 			boolean isValidLastName = false;
 			do {
@@ -77,20 +77,19 @@ public class CusSignUp2usecase {
 
 			} while (!isValidLastName);
 
-			// Address Validation (non-empty)
-			sc.nextLine();
+			sc.nextLine(); // Consume the leftover newline character
 			String address;
 			boolean isValidAddress = false;
 			do {
 				System.out.println(ConsoleColors.ORANGE + "Enter Address" + ConsoleColors.RESET);
 				address = sc.nextLine();
 
-				if ( address.length() >= 3 && address.length() <= 20 && address.matches("[a-zA-Z0-9]+")){
+				// Update the regex pattern to allow spaces in the address
+				if (address.length() >= 3 && address.length() <= 20 && address.matches("[a-zA-Z0-9 ]+")) {
 					isValidAddress = true;
 				} else {
-					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid address! Must be 3-20 characters long." + ConsoleColors.RESET);
+					System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid address! Must be 3-20 characters long and can contain letters, numbers, and spaces." + ConsoleColors.RESET);
 				}
-
 			} while (!isValidAddress);
 
 			String mobile;

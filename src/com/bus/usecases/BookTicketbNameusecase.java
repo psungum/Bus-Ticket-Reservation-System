@@ -21,11 +21,12 @@ public class BookTicketbNameusecase {
 			System.out.println(ConsoleColors.ORANGE + "Enter Bus Name" + ConsoleColors.RESET);
 			bName = sc.nextLine();
 
-			if (!bName.isEmpty() && bName.matches("[a-zA-Z ]+")) {
+			if (!bName.isEmpty() && bName.length() >= 5 && bName.length() <= 15 && bName.matches("[a-zA-Z ]+")) {
 				isValidBusName = true;
 			} else {
-				System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid bus name! Must contain only letters" + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.RED_BACKGROUND + "Invalid bus name! Must be 5-15 characters long and contain only letters and spaces." + ConsoleColors.RESET);
 			}
+
 
 		} while (!isValidBusName);
 

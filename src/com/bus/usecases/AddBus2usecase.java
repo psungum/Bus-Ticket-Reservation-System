@@ -140,8 +140,9 @@ public class AddBus2usecase {
 		return busNo > 0 && busNo < 300;
 	}
 
-	static boolean validateBusName(String busName) {
-		return busName.length() >= 5 && busName.length() <= 15;
+	 static boolean validateBusName(String busName) {
+		// Allow letters, numbers, and spaces only, with length between 5 and 15 characters
+		return busName.length() >= 5 && busName.length() <= 15 && busName.matches("[a-zA-Z ]+");
 	}
 }
 
