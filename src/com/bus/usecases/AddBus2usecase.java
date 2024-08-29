@@ -89,7 +89,7 @@ public class AddBus2usecase {
 		return input;
 	}
 
-	static String getString2(String message, Predicate<String> predicate) {
+	static String getString(String message, Predicate<String> predicate) {
 		String input = "";
 		while (true) {
 			try {
@@ -108,7 +108,7 @@ public class AddBus2usecase {
 	}
 
 
-	static String getString(String message, Predicate<String> predicate) {
+	static String getString2(String message, Predicate<String> predicate) {
 		System.out.println(ConsoleColors.ORANGE + message + ConsoleColors.RESET);
 		String input = sc.nextLine().trim();
 
@@ -141,7 +141,6 @@ public class AddBus2usecase {
 	}
 
 	 static boolean validateBusName(String busName) {
-		// Allow letters, numbers, and spaces only, with length between 5 and 15 characters
 		return busName.length() >= 5 && busName.length() <= 15 && busName.matches("[a-zA-Z ]+");
 	}
 }

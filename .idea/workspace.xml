@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da63819c-a23f-4c12-a5ba-3a9bee3bc74c" name="Changes" comment="upper bound validations">
+    <list default="true" id="da63819c-a23f-4c12-a5ba-3a9bee3bc74c" name="Changes" comment="&#10;testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bus/usecases/AddBus2usecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bus/usecases/AddBus2usecase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/usecases/BookTicketbNameusecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bus/usecases/BookTicketbNameusecase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/usecases/CusSignUp2usecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bus/usecases/CusSignUp2usecase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724894786959</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&#10;testing">
+      <option name="closed" value="true" />
+      <created>1724897813310</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724897813310</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +117,7 @@
     <MESSAGE value="Refactor project structure" />
     <MESSAGE value="Add validations" />
     <MESSAGE value="upper bound validations" />
-    <option name="LAST_COMMIT_MESSAGE" value="upper bound validations" />
+    <MESSAGE value="&#10;testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;testing" />
   </component>
 </project>
